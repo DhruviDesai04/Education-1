@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+body {
+    font-family: 'Montserrat',
+        sans-serif;
+}
+
+.mainContainer {
+    background-image: url("img/bg.jpg");
+    background-color: #000;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0;
+}
+
+.contain {
+    height: 100%;
+}
+
+.details {
+    width: 30%;
+    color: #1B2A49;
+    margin-left: auto;
+    margin-right: 80px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    z-index: -1;
+    height: 50%;
+    box-shadow: 10px 10px 20px #cbcde1;
+    border-radius: 10px;
+}
+
+.detailsContain {
+    height: 50%;
+    z-index: 2;
+    /* background-color: #C9D1D3; */
+    opacity: 0.9;
+    line-height: 50px;
+}
+
+
+
+.mainContainer h1 {
+    padding: 70px 30px 20px;
+}
+
+button {
+    z-index: 3;
+    margin: 30px 10px 80px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 700;
+    box-shadow: 5px 5px 10px #dfe7e9,
+        -5px -5px 10px #ECF0F1;
+}
+
+.btn1,
+.btn-1 {
+    color: #1B2A49;
+    background-color: #C9D1D3;
+}
+
+.btn2,
+.btn-2 {
+    color: #C9D1D3;
+    background-color: #1B2A49;
+}
+
+/* media query */
+@media only screen and (max-width: 1250px) {
+
+    .details {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .btn-1,
+    .btn1 {
+        margin: 30px 10px 10px;
+    }
+
+    .btn-2,
+    .btn2 {
+        margin: 10px 10px 80px;
+    }
+
+    .details {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .details {
+        margin: auto;
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .details {
+        width: 85%;
+    }
+}
+
+/* Animation */
+.detailsContain span {
+    animation: glow-in 1s both;
+}
+
+
+@keyframes glow-in {
+    from {
+        opacity: 0;
+    }
+
+    65% {
+        opacity: 1;
+        text-shadow: 5px 5px 50px #1B2A49;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.8;
+    }
+}
